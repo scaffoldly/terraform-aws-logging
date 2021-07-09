@@ -67,7 +67,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_account_name"></a> [account\_name](#input\_account\_name) | n/a | `string` | n/a | yes |
+| <a name="input_account_name"></a> [account\_name](#input\_account\_name) | AWS account name (will be prefix of the bucket names) | `string` | n/a | yes |
 
 ## Outputs
 
