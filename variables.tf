@@ -4,6 +4,6 @@ variable "organization" {
 }
 
 variable "root_email" {
-  type = string
+  type        = string
   description = "The root email"
 }
