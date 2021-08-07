@@ -1,4 +1,9 @@
-variable "account_name" {
+variable "organization" {
   type        = string
-  description = "AWS account name (will be prefix of the bucket names)"
+  description = "The organization (will prefix the bucket names)"
+}
+
+variable "root_email" {
+  type = string
+  description = "The root email"
 }
