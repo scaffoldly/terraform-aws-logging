@@ -62,8 +62,8 @@ data "aws_iam_policy_document" "bucket_policy" {
     principals {
       type = "Service"
       identifiers = [
-        "cloudtrail.amazonaws.com",
         "delivery.logs.amazonaws.com",
+        "cloudtrail.amazonaws.com",
       ]
     }
   }
@@ -80,8 +80,8 @@ data "aws_iam_policy_document" "bucket_policy" {
     principals {
       type = "Service"
       identifiers = [
-        "cloudtrail.amazonaws.com",
         "delivery.logs.amazonaws.com",
+        "cloudtrail.amazonaws.com",
       ]
     }
   }
@@ -117,8 +117,8 @@ resource "aws_kms_key" "cloudtrail" {
             "Effect": "Allow",
             "Principal": {
                 "AWS": [
-                    "arn:${data.aws_partition.current.partition}:iam::${data.aws_caller_identity.current.account_id}:root",
-                    "arn:${data.aws_partition.current.partition}:iam::${data.aws_caller_identity.current.account_id}:role/${var.root_email}"
+                    "arn:${data.aws_partition.current.partition}:iam::${data.aws_caller_identity.current.account_id}:role/${var.root_email}",
+                    "arn:${data.aws_partition.current.partition}:iam::${data.aws_caller_identity.current.account_id}:root"
                 ]
             },
             "Action": "kms:*",
