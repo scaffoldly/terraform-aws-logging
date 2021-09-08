@@ -62,8 +62,8 @@ data "aws_iam_policy_document" "bucket_policy" {
     principals {
       type = "Service"
       identifiers = [
-        "delivery.logs.amazonaws.com",
         "cloudtrail.amazonaws.com",
+        "delivery.logs.amazonaws.com",
       ]
     }
   }
@@ -80,8 +80,8 @@ data "aws_iam_policy_document" "bucket_policy" {
     principals {
       type = "Service"
       identifiers = [
-        "delivery.logs.amazonaws.com",
         "cloudtrail.amazonaws.com",
+        "delivery.logs.amazonaws.com",
       ]
     }
   }
