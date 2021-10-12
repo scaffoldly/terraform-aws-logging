@@ -134,16 +134,6 @@ resource "aws_cloudtrail" "cloudtrail" {
     }
   }
 
-  event_selector {
-    read_write_type           = "All"
-    include_management_events = true
-
-    data_resource {
-      type   = "AWS::DynamoDB::Table"
-      values = ["arn:${data.aws_partition.current.partition}:dynamodb"]
-    }
-  }
-
   insight_selector {
     insight_type = "ApiCallRateInsight"
   }
